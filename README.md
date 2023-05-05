@@ -41,7 +41,7 @@ $ cd Blockchain/User_program
 $ go run main.go
 ```
 
-    Certaines fonctionnalités disponibles :
+Certaines fonctionnalités disponibles :
 
 ```bash
 $ go run main.go -u # affiche votre id d'utilisateur
