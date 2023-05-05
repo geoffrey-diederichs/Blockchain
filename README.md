@@ -21,7 +21,7 @@ Solution décentralisé (plus digne de confiance), qui permettra de visualiser t
 
 ### Qualité et confiance
 
-Assurer un certain niveau de confiance envers certains produits en ajoutant l'accès à des contrôles qualités ou contrôles techniques dans la blockchain. Par exemple, en scannant le qr code liée à une voiture, vous pourriez consulter la date du dernier contrôle technique effectué, et l'identité du mécanicien s'en étant occupé.
+Assurer un certain niveau de confiance envers certains produits en ajoutant l'accès à des contrôles qualités ou contrôles techniques dans la blockchain. Par exemple, en scannant le QR code liée à une voiture, vous pourriez consulter la date du dernier contrôle technique effectué, et l'identité du mécanicien s'en étant occupé.
 
 ### Sécurité
 
