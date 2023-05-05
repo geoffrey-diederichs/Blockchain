@@ -55,7 +55,7 @@ func (blockchain *Blockchain) Verify(users []UsersData) int {
 	for i1, i2 := range blockchain.Blocks {
 		if len(blockchain.Blocks) > i1+1 {
 			if i1 != len(blockchain.Blocks)-1 {
-				if (blockchain.Blocks[i1].OtherId != blockchain.Blocks[i1+1].UserId) {
+				if (blockchain.Blocks[i1].UserId != blockchain.Blocks[i1+1].UserId) && ((blockchain.Blocks[i1].UserId != blockchain.Blocks[i1+1].OtherId) || (blockchain.Blocks[i1].OtherId != blockchain.Blocks[i1+1].UserId)) {
 					return 0
 				}
 			}
@@ -67,6 +67,7 @@ func (blockchain *Blockchain) Verify(users []UsersData) int {
 				if VerifySignature(hash, i2.SignedHash, k2.PubKey) == 0 {
 					return 0
 				}
+				break
 			} else if k1 == len(users)-1 {
 				return 0
 			}
