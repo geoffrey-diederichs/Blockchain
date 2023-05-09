@@ -49,6 +49,8 @@ func main() {
 	}
 
 	switch os.Args[1] {
+	case "-help":
+		fmt.Println("-user : affiche votre id d'utilisateur\n\n-show : affiche les blockchains\n-show 1 : affiche la blockchain d'id 1\n-show 1 1 : affiche le block 1 de la blockchain d'id 1\n\n-new : crée une blockchain\n-block 1 2 : ajoute un block à la blockchain d'id 1 transférant (ou récupérant) la propriété à l'utilisateur 2\n\n-verify : vérifie la validité de toutes les blockchains\n-verify 1 : vérifie la validité de la blockchain 1")
 	case "-user":
 		fmt.Println(userId)
 
