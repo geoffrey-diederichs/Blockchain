@@ -44,7 +44,9 @@ $ go run main.go
 Certaines fonctionnalités disponibles :
 
 ```bash
-$ go run main.go -user# affiche votre id d'utilisateur
+$ go run main.go -help # affiche les commandes disponibles
+
+$ go run main.go -user # affiche votre id d'utilisateur
 
 $ go run main.go -show # affiche les blockchains
 $ go run main.go -show 1 # affiche la blockchain d'id 1
