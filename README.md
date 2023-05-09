@@ -67,23 +67,3 @@ $ cd Blockchain/Site
 $ go run main.go
 ```
 Puis allez consulter les adresses localhost:8080/home?id=0 et localhost:8080/home?id=1.
-
-### P2P
-
-Code basique permettant un transfert de donné en P2P entre deux machines. Depuis l'hôte :
-
-```bash
-$ git clone https://github.com/geoffrey-diederichs/Blockchain
-$ cd Blockchain/p2p/p2p_host
-$ go run main.go
-```
-
-Depuis le client :
-
-```bash
-$ git clone https://github.com/geoffrey-diederichs/Blockchain
-$ cd Blockchain/p2p/p2p_client
-$ go run main.go
-```
-    
-Un message apparaîtra sur l'hôte.
