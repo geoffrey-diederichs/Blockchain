@@ -49,10 +49,10 @@ func main() {
 	}
 
 	switch os.Args[1] {
-	case "-u":
+	case "-user":
 		fmt.Println(userId)
 
-	case "-s":
+	case "-show":
 		switch len(os.Args) {
 		case 2:
 			for _, i := range blockchainsData {
@@ -102,11 +102,11 @@ func main() {
 			}
 		}
 
-	case "-n":
+	case "-new":
 		blockchainsData = b.AddBlockchain(blockchainsData, len(blockchainsData)+1, *b.NewBlockchain(userId))
 		ioutil.WriteFile("data/blockchains.json", b.BlockchainsToJson(blockchainsData), 0644)
 
-	case "-b":
+	case "-block":
 		if (len(os.Args) > 3) {
 			id, err := strconv.Atoi(os.Args[2])
 			if err != nil {
@@ -130,7 +130,7 @@ func main() {
 			}
 		}
 
-	case "-v":
+	case "-verify":
 		if (len(os.Args) == 2) {
 			for _, i := range blockchainsData {
 				if i.Data.Verify(users) == 1 {
