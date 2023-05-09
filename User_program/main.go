@@ -58,7 +58,7 @@ func main() {
 		switch len(os.Args) {
 		case 2:
 			for _, i := range blockchainsData {
-				fmt.Println(i.Id, len(i.Data.Blocks))
+				fmt.Println("Blockchain :", i.Id, "\n", "Blocks :", len(i.Data.Blocks))
 			}
 		case 3:
 			id, err := strconv.Atoi(os.Args[2])
@@ -69,7 +69,7 @@ func main() {
 			for i1, i2 := range blockchainsData {
 				if id == i2.Id {
 					for k1, k2 := range i2.Data.Blocks {
-						fmt.Println(k1+1, k2.SignedHash, "\n")
+						fmt.Println("Block :", k1+1, "\n", "Signed hash :", k2.SignedHash, "\n")
 					}
 					return
 				} else if i1 == len(blockchainsData)-1 {
@@ -91,7 +91,7 @@ func main() {
 				if id == i2.Id {
 					for k1, k2 := range i2.Data.Blocks {
 						if k1+1 == block {
-							fmt.Println(k2.PreviousSignedHash, "\n", k2.SignedHash, "\n", k2.UserId, "\n", k2.OtherId, "\n", k2.Time)
+							fmt.Println("Previous signed hash :", k2.PreviousSignedHash, "\n\n", "Signed hash :", k2.SignedHash, "\n\n", "User id :", k2.UserId, "\n\n", "Other user id :", k2.OtherId, "\n\n", "Timestamp :", k2.Time)
 							return
 						} else if k1 == len(i2.Data.Blocks)-1 {
 							fmt.Println("Couldn't find the block")
