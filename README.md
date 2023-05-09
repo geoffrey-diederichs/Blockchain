@@ -44,17 +44,17 @@ $ go run main.go
 Certaines fonctionnalités disponibles :
 
 ```bash
-$ go run main.go -u # affiche votre id d'utilisateur
+$ go run main.go -user# affiche votre id d'utilisateur
 
-$ go run main.go -s # affiche les blockchains
-$ go run main.go -s 1 # affiche la blockchain d'id 1
-$ go run main.go -s 1 1 # affiche le block 1 de la blockchain d'id 1
+$ go run main.go -show # affiche les blockchains
+$ go run main.go -show 1 # affiche la blockchain d'id 1
+$ go run main.go -show 1 1 # affiche le block 1 de la blockchain d'id 1
 
-$ go run main.go -n # crée une blockchain
-$ go run main.go -b 1 2 # ajoute un block à la blockchain d'id 1 transférant (ou récupérant) la propriété à l'utilisateur 2
+$ go run main.go -new # crée une blockchain
+$ go run main.go -block 1 2 # ajoute un block à la blockchain d'id 1 transférant (ou récupérant) la propriété à l'utilisateur 2
 
-$ go run main.go -v # vérifie la validité de toutes les blockchains
-$ go run main.go -v 1 # vérifie la validité de la blockchain 1
+$ go run main.go -verify # vérifie la validité de toutes les blockchains
+$ go run main.go -verify 1 # vérifie la validité de la blockchain 1
 ```
 
 ### Site
