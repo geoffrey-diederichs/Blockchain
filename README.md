@@ -2,7 +2,7 @@
 
 ## Description
 
-Blockchain permettant de retracer toute l'existence d'un produit. Chaque propriétaire peut transférer les droits de possession d'un objet à un autre utilisateur, qui valide la transaction avant de pouvoir le transférer à quelqu'un d'autre s'il le souhaite.
+Blockchain permettant de retracer toute l'existence d'un produit. Chaque propriétaire peut transférer les droits de possession d'un objet à un autre utilisateur, qui valide la transaction avant de pouvoir le transférer à quelqu'un d'autre s'il le souhaite. Entre autres, un système de signatures à partir de chiffrement RSA permet de sécuriser les informations.
 
 ## Exemple
 
