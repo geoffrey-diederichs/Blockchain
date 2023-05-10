@@ -35,7 +35,7 @@ Le projet est en cours de développement. Ci-dessous vous retrouverez le contenu
 
 ### User program
 
-Contient un programme en go tournant uniquement en local permettant de créer votre utilisateur, créer une blockchain, ajouter des blocks à une blockchain. Pour employer le programme :
+Contient un programme en go tournant uniquement en local permettant de créer votre utilisateur, créer une blockchain, ajouter des blocks à une blockchain, et de vérifier l'intégrité d'une blockchain. Pour employer le programme :
 
 ```bash
 $ git clone https://github.com/geoffrey-diederichs/Blockchain
