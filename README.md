@@ -4,7 +4,7 @@
 
 Blockchain permettant de retracer toute l'existence d'un produit. Chaque propriétaire peut transférer les droits de possession d'un objet à un autre utilisateur, qui valide la transaction avant de pouvoir le transférer à quelqu'un d'autre s'il le souhaite. 
 
-Les données sont sécurisées car chaque block contient un hash signé : toutes les données du block sont rassemblées pour calculer le hash, qui est ensuite signé avec la clé privé RSA de l'utilisateur. Un algorithme permet de valider l'authenticité des blockchains, entre autres en vérifiant chaque hash signé : aucune usurpation d'identité ou modification des données n'est possible. 
+Les données sont sécurisées car chaque block contient un hash signé : toutes les données du block sont rassemblées pour calculer le hash, qui est ensuite signé avec la clé privé RSA de l'utilisateur. Un algorithme permet de valider l'authenticité des blockchains, entre autres en vérifiant chaque hash signé : modification des données une fois le block fermé, ou usurpation d'identité n'est possible.
 
 ## Exemple
 
